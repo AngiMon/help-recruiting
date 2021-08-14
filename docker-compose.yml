@@ -1,0 +1,53 @@
+version: '3.5'
+
+services:
+  web:
+    build: ./docker/php_box
+    container_name: web
+    ports:
+      - "8741:80"
+    depends_on:
+      - db
+    volumes: 
+      - ./:/var/www/coaching
+      - ./docker/web/vhosts:/etc/apache2/sites-enabled:ro
+    working_dir: /var/www/coaching
+
+  db:
+    image: mariadb:10.4.12
+    container_name: db
+    env_file:
+      - docker/.env
+    expose:
+      - 3306
+    volumes:
+      - mysqldata:/var/lib/mysql
+      - ./docker/mariadb/my.cnf:/etc/mysql/conf.d/my.cnf
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports: 
+      - "8080:80"
+    depends_on:
+      - db
+    environment: 
+      UPLOAD_LIMIT: 200M
+      PMA_HOST: db
+
+  maildev:
+    image: maildev/maildev
+    command: bin/maildev --web 80 --smtp 25 --hide-extensions STARTTLS
+    ports: 
+      - "8081:80"
+
+  encore:
+    image: node:16-alpine3.11
+    volumes:
+      - .:/var/www/
+    ports:
+      - "8001:80"
+    working_dir: /var/www/coaching
+    command: ["yarn", "dev-server", "--host=0.0.0.0"]
+
+volumes: 
+  mysqldata:
