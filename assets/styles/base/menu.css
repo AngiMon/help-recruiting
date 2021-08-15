@@ -1,0 +1,11 @@
+#menu .logo_container {
+    display: flex;
+    text-transform: capitalize;
+    align-items: flex-end;
+}
+#menu .logo_container img {
+    width: 123px;
+}
+#menu .logo_container h1 {
+    font-size: 2em;
+}

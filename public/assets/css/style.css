@@ -2,7 +2,7 @@
 Project:	    LifeCoach
 Version:        1.0.0
 
-Default Color   #f4b200;
+Default Color   #e68982;
 
 Body copy:		'Poppins', sans-serif; 14px;
 Headers:		'Nunito', sans-serif;
@@ -321,7 +321,7 @@ B. Helpers
 }
 
 .ts-font-color__primary {
-    color: #f4b200;
+    color: #e68982;
 }
 
 /*-------------------------------------------
@@ -727,7 +727,7 @@ B. Helpers
 -------------------------------------------*/
 
 a {
-    color: #f4b200;
+    color: #e68982;
     transition: .3s ease;
 }
 
@@ -1117,14 +1117,14 @@ blockquote h6 {
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     /*background-color: darken( var(--color-primary), 20% );
     border-color: darken( var(--color-primary), 20% );*/
-    background-color: #f4b200;
-    border-color: #f4b200;
+    background-color: #e68982;
+    border-color: #e68982;
     box-shadow: .125rem .1875rem .9375rem rgba(0, 0, 0, .3);
 }
 
 .btn-primary {
-    background-color: #f4b200;
-    border-color: #f4b200;
+    background-color: #e68982;
+    border-color: #e68982;
     color: #fff;
 }
 
@@ -1155,18 +1155,18 @@ blockquote h6 {
 }
 
 .btn-outline-primary {
-    border-color: #f4b200;
-    color: #f4b200;
+    border-color: #e68982;
+    color: #e68982;
 }
 
 .btn-outline-primary:hover {
-    background-color: #f4b200;
-    border-color: #f4b200;
+    background-color: #e68982;
+    border-color: #e68982;
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus {
-    background-color: #f4b200;
-    border-color: #f4b200;
+    background-color: #e68982;
+    border-color: #e68982;
     box-shadow: 0 0 0 .2rem rgba(244, 178, 0, .5);
 }
 
@@ -1426,7 +1426,7 @@ form.ts-labels-inside-input .form-group label.focused,
 }
 
 .ts-item-header .icon .step {
-    background-color: #f4b200;
+    background-color: #e68982;
     top: 0;
     box-shadow: .125rem .1875rem .9375rem rgba(0, 0, 0, .15);
     border-radius: 50%;
@@ -1459,7 +1459,7 @@ ul {
 
 ul.ts-list-colored-bullets li:before {
     content: "•";
-    color: #f4b200;
+    color: #e68982;
     vertical-align: middle;
     font-size: 1.75rem;
     padding-right: .75rem;
@@ -1625,13 +1625,13 @@ iframe div {
 
 .progress {
     background-color: transparent;
-    border: .125rem solid #f4b200;
+    border: .125rem solid #e68982;
     border-radius: 0;
     height: .625rem;
 }
 
 .progress .progress-bar {
-    background-color: #f4b200;
+    background-color: #e68982;
 }
 
 /*-------------------------------------------
@@ -1655,7 +1655,7 @@ iframe div {
 .ts-promo-number .ts-promo-number-divider:after {
     content: "";
     bottom: 0;
-    border: .125rem solid #f4b200;
+    border: .125rem solid #e68982;
     border-radius: 50%;
     height: .625rem;
     margin: auto;
@@ -1749,7 +1749,7 @@ select::-ms-expand {
 .nav-tabs .nav-link.active {
     color: #191919;
     background-color: transparent;
-    border-bottom: .1875rem solid #f4b200;
+    border-bottom: .1875rem solid #e68982;
     opacity: 1;
 }
 
@@ -2045,12 +2045,12 @@ E. Template Specific Elements
 }
 
 .ts-time-line__horizontal .ts-time-line__item.ts-time-line__milestone .ts-box {
-    background-color: #f4b200;
+    background-color: #e68982;
     color: #fff;
 }
 
 .ts-time-line__horizontal .ts-time-line__item.ts-time-line__milestone .ts-box:after {
-    border-color: #f4b200 transparent transparent transparent;
+    border-color: #e68982 transparent transparent transparent;
 }
 
 .ts-time-line__horizontal .ts-time-line__item.ts-time-line__milestone h5 {
